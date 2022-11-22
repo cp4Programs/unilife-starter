@@ -1,0 +1,25 @@
+.nav-container {
+    color: white;
+    height: 60px;
+    background-color: #00A2E1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-right p {
+    padding: 16px;
+}
+
+.banner {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+}
