@@ -45,7 +45,6 @@ function BannerText({ title, text }) {
             <div style={overlayStyle}></div>
             <p style={bannerText}>{title}</p>
             <p style={subText}>{text}</p>
-
         </div>
 
     )

@@ -6,6 +6,7 @@ import Homepage from './pages/Homepage';
 import SeeAllCitiesPage from './pages/SeeAllCitiesPage';
 import CityDetails from './pages/CityDetails';
 import Footer from './components/Footer'
+import 'typeface-epilogue'
 
 function App() {
 
