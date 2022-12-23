@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles/App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
@@ -8,7 +8,10 @@ import CityDetails from './pages/CityDetails';
 import Footer from './components/Footer'
 import 'typeface-epilogue'
 
+
 function App() {
+
+
 
   return (
     <BrowserRouter>

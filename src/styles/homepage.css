@@ -35,11 +35,17 @@
     display: flex
 }
 
-.fac-sect-lh {
+.fav-sect-lh {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     padding: 6%;
     margin: auto;
+    width: 50%;
+}
+
+.spacing {
+    margin: 12px;
+    width: 75%;
 }

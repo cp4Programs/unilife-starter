@@ -4,15 +4,18 @@ import '../styles/homepage.css'
 import { MdScreenSearchDesktop, MdOutlineReceiptLong } from "react-icons/md";
 import { VscChecklist } from "react-icons/vsc"
 import person from '../assets/person.png'
+import TopCities from '../components/TopCities'
 
 
 
 function Homepage() {
+
+
     const personImg = {
         backgroundImage: `url(${person})`,
         height: '37vh',
         width: '50%',
-        backgroundSize: 'cover',
+        backgroundSize: 'auto',
         backgroundPosition: 'center',
         position: 'relative',
         display: 'flex',
@@ -27,6 +30,9 @@ function Homepage() {
         <div>
             <div>
                 <BannerText title="Find Student Homes With Bills Included" text="A Simple and Faster Way to Search for Student Accomodation" />
+            </div>
+            <div>
+                <TopCities />
             </div>
             <div className="comparison-container">
                 <div>
@@ -54,14 +60,14 @@ function Homepage() {
             <div className="fav-sect-container">
                 <div className="fav-sect-lh">
                     <div>
-                        <h1>Best Selection</h1>
-                        <p>Best selection of student accommodations. Never been easier to find a home that’s right for you.</p>
+                        <h1 className="spacing">Best Selection</h1>
+                        <p className="spacing">Best selection of student accommodations. Never been easier to find a home that’s right for you.</p>
                     </div>
                     <div>
-                        <h1>Your favorite</h1>
-                        <p>Shortlist your favourite properties and send enquiries in one click.</p>
+                        <h1 className="spacing">Your favorite</h1>
+                        <p className="spacing">Shortlist your favourite properties and send enquiries in one click.</p>
                     </div>
-                    <input type="text" placeholder="search & compare" />
+                    <input className="spacing" type="text" placeholder="search & compare" />
                 </div>
                 <div className="fav-sec-img" style={personImg}></div>
             </div>
