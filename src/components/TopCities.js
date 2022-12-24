@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import CitiesCard from './CitiesCard'
+import '../styles/citiescard.css'
 
 function TopCities() {
 
@@ -17,18 +18,16 @@ function TopCities() {
 
     console.log(cities)
     return (
-        <div>
+        <div className="top-cities-container">
             <h1>Student accomodations in our top cities</h1>
-            <div>
+            <div className="cities-grid-container">
                 {
                     cities.map((item) => {
                         return <CitiesCard cities={item} />
-
-                        // <p key={item.id}>{item.name}</p>
                     })
                 }
-
             </div>
+            <button>See All Cities</button>
         </div>
     )
 }
