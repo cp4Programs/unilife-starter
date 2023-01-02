@@ -4,9 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Homepage from './pages/Homepage';
 import SeeAllCitiesPage from './pages/SeeAllCitiesPage';
-import CityDetails from './pages/CityDetails';
+import CityDetailsPage from './pages/CityDetailsPage';
 import Footer from './components/Footer'
 import 'typeface-epilogue'
+
 
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="seeallcities" element={<SeeAllCitiesPage />} />
-        <Route path="citydetails" element={<CityDetails />} />
+        <Route path="citydetails/:cityId" element={<CityDetailsPage />} />
       </Routes>
       <Footer />
 

@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../styles/citiescard.css'
+import { Link } from 'react-router-dom'
 
-function CitiesCard({ cities }) {
-
-
+function CitiesCard({ citiesCard }) {
+    console.log(citiesCard._id)
     return (
         <div className="card-container">
-            <img src={cities.image_url} />
+            <Link to={`citydetails/${citiesCard._id}`}><img src={citiesCard.image_url} /></Link>
             <div className="card-text-container">
-                <h3>{cities.name}</h3>
-                <p>{cities.property_count} properties</p>
+                <h3>{citiesCard.name}</h3>
+                <p>{citiesCard.property_count} properties</p>
             </div>
         </div>
     )

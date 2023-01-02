@@ -5,6 +5,7 @@ import { MdScreenSearchDesktop, MdOutlineReceiptLong } from "react-icons/md";
 import { VscChecklist } from "react-icons/vsc"
 import person from '../assets/person.png'
 import TopCities from '../components/TopCities'
+import Search from '../components/Search'
 
 
 
@@ -30,6 +31,9 @@ function Homepage() {
         <div>
             <div>
                 <BannerText title="Find Student Homes With Bills Included" text="A Simple and Faster Way to Search for Student Accomodation" />
+            </div>
+            <div>
+                <Search />
             </div>
             <div>
                 <TopCities />

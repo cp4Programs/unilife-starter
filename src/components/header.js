@@ -3,6 +3,7 @@ import '../styles/header.css'
 import { BsHouseDoor } from 'react-icons/bs'
 import { FiHeart } from 'react-icons/fi'
 import { AiOutlineMail } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 
 
@@ -17,7 +18,7 @@ function Header() {
             <div className="nav-container">
                 <div className="nav-left">
                     <p><BsHouseDoor /></p>
-                    <p>UniLife</p>
+                    <Link to='/'><p>UniLife</p></Link>
                 </div>
                 <div className="nav-right">
                     <p><FiHeart /></p>

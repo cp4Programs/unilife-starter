@@ -21,6 +21,7 @@ button {
     padding: 12px 32px;
     border-radius: 8px;
     border: none;
+    width: 16vh;
 }
 
 
@@ -56,4 +57,10 @@ img {
     height: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
 }
