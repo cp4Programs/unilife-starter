@@ -1,0 +1,64 @@
+.property-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 5% 0%;
+}
+
+.property-card {
+    width: 28vh;
+    height: 31vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vh;
+}
+
+.room-rent {
+    background-color: #3A5295;
+    width: 100%;
+    height: 10vh;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.room-rent-rh {
+    display: flex;
+}
+
+.furnishings {
+    width: 100%;
+    border: solid lightgrey 1px;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.type-furnish {
+    display: flex;
+    justify-content: space-around;
+}
+
+.location {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 10px;
+    margin-left: 15%;
+    margin-bottom: 1%;
+}
+
+.property-pics {
+    width: 100%;
+    border: solid lightgrey 1px;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 12px 12px;
+}
