@@ -8,8 +8,8 @@ function Search() {
     return (
         <div className="search-bar">
             <div className="search-container">
-                <input className="" placeholder="Search by city" />
-                <input className="" placeholder="Any bedroom" />
+                <select> <option value="">Any Bedroom</option> </select>
+                <select> <option value="">Any Bedroom</option> </select>
                 <button>Find Homes</button>
             </div>
         </div>

@@ -18,7 +18,6 @@ function AllCitiesButton({ allCities }) {
 
     return (
         <div >
-
             <a href={`citydetails/${allCities._id}`}><button style={buttonStyle} key={allCities._id}>{allCities.name}</button></a>
         </div >
 

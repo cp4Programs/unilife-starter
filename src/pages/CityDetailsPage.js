@@ -4,11 +4,13 @@ import Search from '../components/Search.js'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import PropertyCard from '../components/PropertyCard'
+import StudentLifeSection from '../components/StudentLifeSection'
 
 function CityDetails() {
 
     const { cityId } = useParams()
     const [propertiesData, setPropertiesData] = useState([])
+    const [studentLife, setStudentLife] = useState('')
 
 
     useEffect(() => {
@@ -18,7 +20,15 @@ function CityDetails() {
                 console.log(res.data.response)
             })
             .catch(err => console.log(err))
+    }, [])
 
+    useEffect(() => {
+        axios.get(`https://unilife-server.herokuapp.com/cities/${cityId}`)
+            .then(res => {
+                console.log(res.data.data)
+                setStudentLife(res.data.data)
+            })
+            .catch(err => console.log(err))
     }, [])
 
 
@@ -29,12 +39,11 @@ function CityDetails() {
             <div className="property-card-container">
                 {
                     propertiesData?.map(item => {
-                        return <PropertyCard property={item} />
+                        return <PropertyCard key={item._id} property={item} />
                     })
                 }
-
             </div>
-
+            <StudentLifeSection studentLifeData={studentLife} />
         </div >
 
     )

@@ -36,7 +36,7 @@ function SeeAllCitiesPage() {
     return (
         <div>
 
-            <BannerText title="Search Accommodation" text="Whatever you’re after, we can help you find the right student accommodation for you. " />
+            <BannerText title="Student Accommodation" text="Whatever you’re after, we can help you find the right student accommodation for you. " />
             <div style={allCitiesContainer}>
                 <h1>Search by City</h1>
                 <div style={buttonContainer}>

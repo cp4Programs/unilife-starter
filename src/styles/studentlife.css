@@ -1,0 +1,23 @@
+.student-life-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 94%;
+    align-items: center;
+    margin: 2%;
+    background-color: #F6FAFD;
+    border-radius: 20px;
+}
+
+.student-lifestyle {
+    width: 50%;
+    border-radius: 20px;
+    padding: 2% 9%;
+}
+
+.student-life-img {
+    width: 50%;
+    padding: 4%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
