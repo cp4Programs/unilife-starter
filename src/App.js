@@ -7,6 +7,7 @@ import SeeAllCitiesPage from './pages/SeeAllCitiesPage';
 import CityDetailsPage from './pages/CityDetailsPage';
 import Footer from './components/Footer'
 import 'typeface-epilogue'
+import HomeDetailPage from './pages/HomeDetailPage';
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="seeallcities" element={<SeeAllCitiesPage />} />
         <Route path="citydetails/:cityId" element={<CityDetailsPage />} />
+        <Route path="homedetails/:cityId" element={<HomeDetailPage />} />
       </Routes>
       <Footer />
 

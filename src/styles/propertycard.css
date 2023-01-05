@@ -56,7 +56,7 @@
 .property-pics {
     width: 100%;
     border: solid lightgrey 1px;
-    height: 6vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;

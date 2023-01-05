@@ -5,11 +5,13 @@ import { MdBed } from 'react-icons/md'
 import { MdOutlineBathtub } from 'react-icons/md'
 import { MdOutlineLocationOn } from 'react-icons/md'
 import { BsHouseDoor } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 
 
 function PropertyCard({ property }) {
 
+    console.log(property)
 
     return (
 
@@ -32,7 +34,10 @@ function PropertyCard({ property }) {
                 </div>
                 <p className="location"><MdOutlineLocationOn /> {property.address.street} {property.address.city} {property.address.postcode}</p>
             </div>
-            <div className="property-pics"><BsHouseDoor /><a>View Home</a></div>
+            <div className="property-pics">
+                <Link to={`homedetails/${cityId}`} ><BsHouseDoor />View Home</Link>
+            </div>
+
         </div>
 
     )

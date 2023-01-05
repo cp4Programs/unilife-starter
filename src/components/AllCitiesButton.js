@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -18,7 +19,7 @@ function AllCitiesButton({ allCities }) {
 
     return (
         <div >
-            <a href={`citydetails/${allCities._id}`}><button style={buttonStyle} key={allCities._id}>{allCities.name}</button></a>
+            <Link to={`citydetails/${allCities._id}`}><button style={buttonStyle} key={allCities._id}>{allCities.name}</button></Link>
         </div >
 
     )
