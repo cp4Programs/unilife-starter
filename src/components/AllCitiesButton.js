@@ -19,7 +19,7 @@ function AllCitiesButton({ allCities }) {
 
     return (
         <div >
-            <Link to={`citydetails/${allCities._id}`}><button style={buttonStyle} key={allCities._id}>{allCities.name}</button></Link>
+            <Link to={`/citydetails/${allCities._id}`}><button style={buttonStyle} key={allCities._id}>{allCities.name}</button></Link>
         </div >
 
     )

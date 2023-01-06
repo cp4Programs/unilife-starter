@@ -11,7 +11,7 @@ import { Link, useParams } from 'react-router-dom'
 
 function PropertyCard({ property }) {
     const { cityId } = useParams()
-    console.log(property)
+
 
     return (
 
@@ -25,7 +25,6 @@ function PropertyCard({ property }) {
                     <p><MdBed />  {property.bedroom_count}</p>
                     <p><MdOutlineBathtub />  {property.bathroom_count}</p>
                 </div>
-
             </div>
             <div className="furnishings">
                 <div className="type-furnish">
@@ -35,9 +34,9 @@ function PropertyCard({ property }) {
                 <p className="location"><MdOutlineLocationOn /> {property.address.street} {property.address.city} {property.address.postcode}</p>
             </div>
             <div className="property-pics">
-                <Link to={`/homedetails/${cityId}`} ><BsHouseDoor />View Home</Link>
+                <Link to={`/homedetails/${property._id}`} ><BsHouseDoor />View Home</Link>
             </div>
-
+            <div>{property._id}</div>
         </div>
 
     )
