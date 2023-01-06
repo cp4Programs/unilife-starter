@@ -1,0 +1,21 @@
+.home-details-page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.home-details-lh-container {
+    width: 100%;
+
+}
+
+.home-details-rh-container {
+    width: 100%;
+
+}
+
+.home-details-imgs-container {
+    background-color: antiquewhite;
+    width: 100%;
+
+}
