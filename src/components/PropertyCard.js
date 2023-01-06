@@ -10,7 +10,7 @@ import { Link, useParams } from 'react-router-dom'
 
 
 function PropertyCard({ property }) {
-    const { cityId } = useParams()
+    //property data is sent from CityDetailsPage API call
 
 
     return (

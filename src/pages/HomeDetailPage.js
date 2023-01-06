@@ -7,8 +7,8 @@ import '../styles/homedetails.css'
 
 function HomeDetailPage() {
     const { propertyId } = useParams()
-    const [propertiesData, setPropertiesData] = useState()
     console.log(propertyId)
+    const [propertiesData, setPropertiesData] = useState([])
 
     useEffect(() => {
         axios.get(`https://unilife-server.herokuapp.com/properties/city/${propertyId}`)
