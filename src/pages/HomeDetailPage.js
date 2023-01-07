@@ -7,14 +7,14 @@ import '../styles/homedetails.css'
 
 function HomeDetailPage() {
     const { propertyId } = useParams()
-    console.log(propertyId)
-    const [propertiesData, setPropertiesData] = useState([])
+    const [propertyData, setPropertyData] = useState([])
+
 
     useEffect(() => {
-        axios.get(`https://unilife-server.herokuapp.com/properties/city/${propertyId}`)
+        axios.get(`https://unilife-server.herokuapp.com/properties/${propertyId}`)
             .then(res => {
-                setPropertiesData(res.data.response)
-                console.log(res.data.response)
+                setPropertyData(res.data)
+                console.log(res.data)
             })
             .catch(err => console.log(err))
     }, [])
@@ -22,10 +22,10 @@ function HomeDetailPage() {
     return (
         <div className="home-details-page-container">
             <div className="home-details-lh-container">
-                <HomeDetailsImages />
+                <HomeDetailsImages propertyData={propertyData} />
             </div>
             <div className="home-details-rh-container">
-                <HomeDetailsLocation />
+                <HomeDetailsLocation propertyData={propertyData} />
             </div>
         </div>
     )

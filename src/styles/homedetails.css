@@ -14,8 +14,15 @@
 
 }
 
-.home-details-imgs-container {
+.hd-imgs-container {
     background-color: antiquewhite;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.hd-small-imgs {
+    display: flex;
+    width: 33%;
 }
