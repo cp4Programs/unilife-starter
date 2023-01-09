@@ -69,13 +69,14 @@
     border-radius: 20px;
 }
 
+.row-lines,
 .top-row-line {
-    line-height: 2.5;
-}
-
-.row-lines {
     border-top: solid 1px lightgrey;
     line-height: 2.5;
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 4%;
+    font-size: large;
 }
 
 /* home details grid row 3 */
