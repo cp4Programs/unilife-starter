@@ -30,6 +30,77 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+
+.hd-det-loc-container {
+    width: 100%;
+}
+
+.address-properties-container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-properties-card {
+    height: 100%;
+    width: 100%;
+    border: solid lightgray 1px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hd-address {
+    height: 35%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid lightgray 1px;
+    line-height: 1.5;
+}
+
+.hd-address h1 {
+    font-weight: 400;
+}
+
+.hd-properties {
+    height: 65%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    line-height: 2.2;
+}
+
+.hd-properties-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.hd-properties-style h2,
+.hd-properties-style h3 {
+    color: #3A5295;
+    font-size: 3vh;
+}
+
+.hd-loc-btn-container {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
 /* home details grid row 2*/
 
 .hd-description-container {
@@ -38,8 +109,6 @@
     align-items: center;
     justify-content: center;
     padding: 0 10% 0 5%;
-    /* height: 30vh; */
-    border: solid 3px red;
 }
 
 .description-content {
@@ -88,8 +157,6 @@
     align-items: center;
     justify-content: center;
     padding: 0 10% 0 5%;
-    /* height: 30vh; */
-    border: solid 3px orange;
 }
 
 .features-content h1 {
@@ -107,56 +174,4 @@
 
 .features-content ul {
     line-height: 2.5;
-}
-
-
-
-/* home details right container */
-/* HomeDetailsLocation */
-
-.hd-det-loc-container {
-    width: 100%;
-    border: black solid 1px;
-    /* height: 44vh; */
-}
-
-.address-properties-container {
-    height: 80%;
-    border: green solid 2px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hd-address {
-    height: 40%;
-    width: 100%;
-    background-color: pink;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-.hd-properties {
-    height: 60%;
-    width: 100%;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hd-loc-btn-container {
-    height: 20%;
-    border: brown solid 2px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
 }

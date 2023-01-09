@@ -1,22 +1,45 @@
 import React from 'react'
+import '../styles/homedetails.css'
+import { FaPoundSign } from 'react-icons/fa'
+import { MdBed } from 'react-icons/md'
+import { MdOutlineBathtub } from 'react-icons/md'
 
 function HomeDetailsLocation({ propertyData }) {
 
     return (
         <div className="hd-det-loc-container">
             <div className="address-properties-container">
-                <div className="hd-address">
-                    <p>{propertyData?.address?.street}</p>
-                    <p>{propertyData?.address?.city}</p>
-                    <p>{propertyData?.address?.postcode}</p>
-                </div>
-                <div className="hd-properties">
-                    <p>Bedrooms {propertyData?.bedroom_count}</p>
-                    <p>Bathrooms {propertyData?.bathroom_count}</p>
-                    <p>Property Type {propertyData?.preoperty_type}</p>
-                    <p>Price {propertyData?.rent}</p>
-                    <p>Furnished Type {propertyData?.furnished}</p>
-                    <p>Available from {propertyData?.availability}</p>
+                <div className="address-properties-card">
+                    <div className="hd-address">
+                        <h1>{propertyData?.address?.street}, {propertyData?.address?.city},</h1>
+                        <h1>{propertyData?.address?.postcode}</h1>
+                    </div>
+                    <div className="hd-properties">
+                        <div className="hd-properties-style">
+                            <p>Bedrooms </p>
+                            <h2><MdBed /> {propertyData?.bedroom_count}</h2>
+                        </div>
+                        <div className="hd-properties-style">
+                            <p>Bathrooms </p>
+                            <h2><MdOutlineBathtub />{propertyData?.bathroom_count}</h2>
+                        </div>
+                        <div className="hd-properties-style">
+                            <p>Property Type </p>
+                            <h3>{propertyData?.property_type}</h3>
+                        </div>
+                        <div className="hd-properties-style">
+                            <p>Price </p>
+                            <h2><FaPoundSign />{propertyData?.rent}</h2>
+                        </div>
+                        <div className="hd-properties-style">
+                            <p>Furnished Type </p>
+                            <h3>{propertyData?.furnished}</h3>
+                        </div>
+                        <div className="hd-properties-style">
+                            <p>Available from </p>
+                            <h3>{propertyData?.availability}</h3>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="hd-loc-btn-container">

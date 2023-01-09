@@ -36,7 +36,7 @@ function PropertyCard({ property }) {
             <div className="property-pics">
                 <Link to={`/homedetails/${property._id}`} ><BsHouseDoor />View Home</Link>
             </div>
-            <div>{property._id}</div>
+
         </div>
 
     )

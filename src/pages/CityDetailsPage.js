@@ -17,7 +17,7 @@ function CityDetails() {
         axios.get(`https://unilife-server.herokuapp.com/properties/city/${cityId}`)
             .then(res => {
                 setPropertiesData(res.data.response)
-                console.log(res.data.response)
+
             })
             .catch(err => console.log(err))
     }, [])
@@ -25,7 +25,7 @@ function CityDetails() {
     useEffect(() => {
         axios.get(`https://unilife-server.herokuapp.com/cities/${cityId}`)
             .then(res => {
-                console.log(res.data.data)
+
                 setStudentLife(res.data.data)
             })
             .catch(err => console.log(err))
