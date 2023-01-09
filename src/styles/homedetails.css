@@ -1,28 +1,160 @@
 .home-details-page-container {
     display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 1em;
+}
+
+.hd-grid-row-1,
+.hd-grid-row-2,
+.hd-grid-row-3 {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-
+    gap: 1em;
+    margin: 1em;
 }
 
-.home-details-lh-container {
-    width: 100%;
-
-}
-
-.home-details-rh-container {
-    width: 100%;
-
-}
-
+/* home details grid row 1 */
+/* HomeDetailsImages */
 .hd-imgs-container {
-    background-color: antiquewhite;
+    border: black solid 1px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 44vh;
+
+}
+
+.hd-small-imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* home details grid row 2*/
+
+.hd-description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10% 0 5%;
+    height: 30vh;
+    border: solid 3px red;
+}
+
+.description-content {
     display: flex;
     flex-direction: column;
 
 }
 
-.hd-small-imgs {
+.description-content h1,
+.hd-prices-container h1 {
+    font-weight: 400;
+}
+
+.description-content p,
+.bedroom-prices-table {
+    line-height: 1.7;
+}
+
+.hd-prices-container {
     display: flex;
-    width: 33%;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+}
+
+.bedroom-prices-table {
+    border: solid 1px lightgrey;
+    border-radius: 20px;
+}
+
+.top-row-line {
+    line-height: 2.5;
+}
+
+.row-lines {
+    border-top: solid 1px lightgrey;
+    line-height: 2.5;
+}
+
+/* home details grid row 3 */
+
+.hd-features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10% 0 5%;
+    height: 30vh;
+    border: solid 3px orange;
+}
+
+.features-content h1 {
+    font-weight: 400;
+}
+
+.features-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.features-content ul {
+    line-height: 2.5;
+}
+
+
+
+/* home details right container */
+/* HomeDetailsLocation */
+
+.hd-det-loc-container {
+    width: 100%;
+    border: black solid 1px;
+    height: 44vh;
+}
+
+.address-properties-container {
+    height: 80%;
+    border: green solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hd-address {
+    height: 40%;
+    width: 100%;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.hd-properties {
+    height: 60%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hd-loc-btn-container {
+    height: 20%;
+    border: brown solid 2px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
 }

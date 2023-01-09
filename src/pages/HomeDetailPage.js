@@ -4,6 +4,9 @@ import axios from 'axios'
 import HomeDetailsImages from '../components/HomeDetailsImages'
 import HomeDetailsLocation from '../components/HomeDetailsLocation'
 import '../styles/homedetails.css'
+import HomeDetailsDescription from '../components/HomeDetailsDescription'
+import HomeDetailsKeyFeatures from '../components/HomeDetailsKeyFeatures'
+import HomeDetailsPrices from '../components/HomeDetailsPrices'
 
 function HomeDetailPage() {
     const { propertyId } = useParams()
@@ -14,20 +17,27 @@ function HomeDetailPage() {
         axios.get(`https://unilife-server.herokuapp.com/properties/${propertyId}`)
             .then(res => {
                 setPropertyData(res.data)
-                console.log(res.data)
+
             })
             .catch(err => console.log(err))
     }, [])
 
+
     return (
         <div className="home-details-page-container">
-            <div className="home-details-lh-container">
+            <div className="hd-grid-row-1">
                 <HomeDetailsImages propertyData={propertyData} />
-            </div>
-            <div className="home-details-rh-container">
                 <HomeDetailsLocation propertyData={propertyData} />
             </div>
+            <div className="hd-grid-row-2">
+                <HomeDetailsDescription propertyData={propertyData} />
+                <HomeDetailsPrices propertyData={propertyData} />
+            </div>
+            <div className="hd-grid-row-3">
+                <HomeDetailsKeyFeatures propertyData={propertyData} />
+            </div>
         </div>
+
     )
 }
 
