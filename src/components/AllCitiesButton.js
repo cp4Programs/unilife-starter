@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 function AllCitiesButton({ allCities }) {
-
+    // allCities from SeeAllCitiesPage //
 
 
     const buttonStyle = {

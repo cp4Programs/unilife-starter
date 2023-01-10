@@ -3,6 +3,7 @@ import '../styles/homedetails.css'
 import { FaPoundSign } from 'react-icons/fa'
 import { MdBed } from 'react-icons/md'
 import { MdOutlineBathtub } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 function HomeDetailsLocation({ propertyData }) {
 
@@ -43,8 +44,9 @@ function HomeDetailsLocation({ propertyData }) {
                 </div>
             </div>
             <div className="hd-loc-btn-container">
-                <button>Shortlist</button>
-                <button>Book Viewing</button>
+                <button className="hd-btns">Shortlist</button>
+
+                <Link to={`/booking`}><button>Book Viewing</button></Link>
             </div>
         </div>
     )

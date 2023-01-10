@@ -17,7 +17,6 @@ function HomeDetailPage() {
         axios.get(`https://unilife-server.herokuapp.com/properties/${propertyId}`)
             .then(res => {
                 setPropertyData(res.data)
-
             })
             .catch(err => console.log(err))
     }, [])
